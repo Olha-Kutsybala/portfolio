@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231210202232" />
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h2 class="logo">OK</h2>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link">About</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Skills</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Projects</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="social__box">
+					<ul data-da=".menu__body, 767.98" class="social__list">
+						<li class="social__item">
+							<svg width="24" height="24">
+								<use xlink:href="img/icons/icons.svg#icon-instagram"></use>
+							</svg>
+						</li>
+						<li class="social__item">
+							<svg width="24" height="24">
+								<use xlink:href="img/icons/icons.svg#icon-facebook"></use>
+							</svg>
+						</li>
+						<li class="social__item">
+							<svg width="24" height="24">
+								<use xlink:href="img/icons/icons.svg#icon-telegram"></use>
+							</svg>
+						</li>
+						<li class="social__item">
+							<svg width="24" height="24">
+								<use xlink:href="img/icons/icons.svg#icon-github"></use>
+							</svg>
+						</li>
+					</ul>
+					<a href="#" data-da=".menu__body, 767.98" class="header__cv">Download CV</a>
+				</div>
+
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__content">
+						<div class="flex-center hero__title--secondary--box">
+							<div class="hero__decor"></div>
+							<h2 class="hero__title--secondary">Front-End Developer</h2>
+						</div>
+
+						<h1 class="hero__title">OLHA KUTSYBALA</h1>
+						<p class="hero__descr">
+							I am organised, flexible and passionate frontend developer, who
+							want to make websites look great and convert visitors into
+							leads.
+						</p>
+						<button class="hero__button button" type="submit" data-popup="#popup">
+							Contact me
+						</button>
+					</div>
+					<picture><source srcset="img/olha.webp" type="image/webp"><img data-da=".hero__descr, 767.98" class="hero__img" src="img/olha.jpg" alt="Olha" width="400" height="600" /></picture>
+				</div>
+			</section>
+			<section class="projects">
+				<div class="projects__container">
+					<h2 class="projects__title">Projects</h2>
+					<ul class="projects__list">
+						<li class="projects__item">
+							<a href="https://fizkylt.com/" class="projects__link" target="_blank" rel="noopener">
+								<img src="" alt="Fizkylt" class="projects__img" />
+								<p class="projects__descr">Fizkylt</p>
+							</a>
+						</li>
+						<li class="projects__item">
+							<a href="https://fizkylt.com/" class="projects__link" target="_blank" rel="noopener">
+								<img src="" alt="Fizkylt" class="projects__img" />
+								<p class="projects__descr">Fizkylt</p>
+							</a>
+						</li>
+						<li class="projects__item">
+							<a href="https://fizkylt.com/" class="projects__link" target="_blank" rel="noopener">
+								<img src="" alt="Fizkylt" class="projects__img" />
+								<p class="projects__descr">Fizkylt</p>
+							</a>
+						</li>
+						<li class="projects__item">
+							<a href="https://fizkylt.com/" class="projects__link" target="_blank" rel="noopener">
+								<img src="" alt="Fizkylt" class="projects__img" />
+								<p class="projects__descr">Fizkylt</p>
+							</a>
+						</li>
+						<li class="projects__item">
+							<a href="https://fizkylt.com/" class="projects__link" target="_blank" rel="noopener">
+								<img src="" alt="Fizkylt" class="projects__img" />
+								<p class="projects__descr">Fizkylt</p>
+							</a>
+						</li>
+						<li class="projects__item">
+							<a href="https://fizkylt.com/" class="projects__link" target="_blank" rel="noopener">
+								<img src="" alt="Fizkylt" class="projects__img" />
+								<p class="projects__descr">Fizkylt</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20231210202232"></script>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<h3 class="form__title">Contact me</h3>
+				<button data-close type="button" class="popup__close">
+					<svg class="popup__close__icon" width="18" height="18">
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+				<div class="popup__text">
+					<form>
+						<label class="form__label" for="name">Name</label>
+						<input required autocomplete="off" type="text" name="name" data-error="Помилка" placeholder="Name" class="input" />
+						<label class="form__label" for="email">E-mail</label>
+						<input data-required="email" type="text" name="email" data-validate data-error="Wrong E-mail" placeholder="E-mail" class="input" />
+						<label class="form__label" for="phone">Phone</label>
+						<input data-required autocomplete="on" type="text" name="phone" data-error="Помилка" placeholder="Phone" class="input" />
+						<label class="form__label" for="name">Message</label>
+						<textarea rows="6" required placeholder="Message" class="input"></textarea>
+						<button type="submit" class="button form__button">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
