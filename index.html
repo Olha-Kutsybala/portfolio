@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-	<title>HomePage</title>
+	<title>Olha Kutsybala Fron-end developer</title>
 	<meta charset="UTF-8" />
-	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="Olha Kutsybala Fron-end developer" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231212143704" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240108214845" />
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,59 +16,61 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href="#" class="logo">OK</a>
+				<a href="#" class="header__logo">
+					<svg class="header__logo__svg">
+						<use xlink:href="img/icons/icons.svg#logo"></use>
+					</svg>
+				</a>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="" class="menu__link">About</a>
+								<a href="#" class="menu__link" data-goto=".hero">About</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">Skills</a>
+								<a href="#" class="menu__link" data-goto=".skills">Skills</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">Projects</a>
+								<a href="#" class="menu__link" data-goto=".projects">Projects</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">Contacts</a>
+								<a href="#" class="menu__link" data-goto=".footer">Contacts</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
-				<div class="social__box">
+				<div class="social social__menu">
 					<ul data-da=".menu__body, 767.98" class="social__list">
 						<li>
 							<a class="social__item" href="https://www.instagram.com/olya_kutsybala_sheremeta/" target="_blank" rel="noopener">
-								<svg width="24" height="24">
-									<use xlink:href="img/icons/icons.svg#icon-instagram"></use>
+								<svg class="social__svg">
+									<use xlink:href="img/icons/icons.svg#instagram"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
 							<a href="https://www.facebook.com/profile.php?id=100017937974849" class="social__item" target="_blank" rel="noopener">
-								<svg width="24" height="24">
-									<use xlink:href="img/icons/icons.svg#icon-facebook"></use>
+								<svg class="social__svg">
+									<use xlink:href="img/icons/icons.svg#facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
 							<a href="https://t.me/OlhaKutsybala" class="social__item" target="_blank" rel="noopener">
-								<svg width="24" height="24">
-									<use xlink:href="img/icons/icons.svg#icon-telegram"></use>
+								<svg class="social__svg">
+									<use xlink:href="img/icons/icons.svg#telegram"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
 							<a href="https://github.com/Olha-Kutsybala" class="social__item" target="_blank" rel="noopener">
-								<svg width="24" height="24">
-									<use xlink:href="img/icons/icons.svg#icon-github"></use>
+								<svg class="social__svg">
+									<use xlink:href="img/icons/icons.svg#github"></use>
 								</svg>
 							</a>
 						</li>
 					</ul>
-					<a href="#" data-da=".menu__body, 767.98" class="header__cv" target="_blank" rel="noopener">Download CV</a>
 				</div>
-
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
 			</div>
 		</header>
@@ -77,24 +79,53 @@
 			<section class="hero">
 				<div class="hero__container">
 					<div class="hero__content">
-						<div class="flex-center hero__title--secondary--box">
-							<div class="hero__decor"></div>
-							<h2 class="hero__title--secondary">Front-End Developer</h2>
-						</div>
-
 						<h1 class="hero__title">OLHA KUTSYBALA</h1>
-						<p class="hero__descr">
-							I am organised, flexible and passionate frontend developer, who
-							want to make websites look great and convert visitors into
-							leads.
-						</p>
-						<button class="hero__button button" type="submit" data-popup="#popup">
-							Contact me
-						</button>
+						<h2 class="hero__title--secondary">Front-End Developer</h2>
+						<div class="hero__button__box">
+							<button class="hero__button__contact button" type="submit" data-popup="#popup">
+								Contact me
+							</button>
+							<a href="#" class="hero__button__cv button" target="_blank" rel="noopener">Download CV</a>
+							<div class="social">
+								<ul class="social__list">
+									<li>
+										<a class="social__item" href="https://www.instagram.com/olya_kutsybala_sheremeta/" target="_blank" rel="noopener">
+											<svg class="social__svg">
+												<use xlink:href="img/icons/icons.svg#instagram"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.facebook.com/profile.php?id=100017937974849" class="social__item" target="_blank" rel="noopener">
+											<svg class="social__svg">
+												<use xlink:href="img/icons/icons.svg#facebook"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="https://t.me/OlhaKutsybala" class="social__item" target="_blank" rel="noopener">
+											<svg class="social__svg">
+												<use xlink:href="img/icons/icons.svg#telegram"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="https://github.com/Olha-Kutsybala" class="social__item" target="_blank" rel="noopener">
+											<svg class="social__svg">
+												<use xlink:href="img/icons/icons.svg#github"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<picture><source srcset="img/olha.webp" type="image/webp"><img data-da=".hero__descr, 767.98" class="hero__img" src="img/olha.jpg" alt="Olha" width="400" height="600" /></picture>
+					<picture><source srcset="img/hero.webp" type="image/webp"><img data-da=".hero__title--secondary, 599" class="hero__img" src="img/hero.jpg" alt="Olha" width="302" height="326" /></picture>
 				</div>
 			</section>
+			<!-- <section class="line">
+          <picture><source srcset="img/line.webp" type="image/webp"><img src="img/line.jpg" alt="" /></picture>
+        </section> -->
 			<section class="projects">
 				<div class="projects__container">
 					<h2 class="title">Projects</h2>
@@ -224,8 +255,8 @@
             </ul> -->
 				</div>
 			</section>
-			<section class="skills">
-				<div class="skills__container">
+			<section class="skills" data-prlx-parent>
+				<div class="skills__container" data-prlx>
 					<h2 class="title">Skills and Technologies</h2>
 					<div class="skills__box">
 						<div class="skills__list__box">
@@ -386,7 +417,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20231212143704"></script>
+	<script src="js/app.min.js?_v=20240108214845"></script>
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -411,6 +442,161 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	,
+	<!-- Стилі для body -->
+	<style>
+		.lock body {
+			overflow: hidden;
+			touch-action: none;
+			overscroll-behavior: none;
+		}
+
+		.loading body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.loaded body {
+			transition: opacity 0.5s ease 0s;
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<div id="fls-preloader">
+		<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+		<!-- Стилі для прелоадера -->
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+			}
+
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+			}
+
+			html {
+				overflow: hidden;
+				touch-action: none;
+				overscroll-behavior: none;
+			}
+
+			/* Головний блок */
+			.fls-preloader {
+				pointer-events: none;
+				z-index: -1;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			/* Блок з елементами */
+			.fls-preloader__body {
+				padding: 0.93rem;
+				max-width: 31.25rem;
+				display: flex;
+				flex-direction: column;
+			}
+
+			/* Блок з лічильником */
+			.fls-preloader__counter {
+				font-size: 2rem;
+			}
+
+			/* Прогресбар */
+			.fls-preloader__line {}
+
+			/* Лінія прогресбару */
+			.fls-preloader__line span {
+				display: inline-block;
+				transition: width 0.2s ease;
+				height: 0.8rem;
+				background-color: #7a956b;
+			}
+		</style>
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector("[data-preloader]") ?
+					document.querySelectorAll("[data-preloader] img") :
+					document.querySelectorAll("img");
+				const preloaderContainer = document.querySelector("#fls-preloader");
+				if (preloaderImages.length) {
+					const preloaderTemplate = `
+					<div class="fls-preloader">
+						<div class="fls-preloader__body">
+							<div class="fls-preloader__counter">0%</div>
+							<div class="fls-preloader__line"><span></span></div>
+						</div>
+					</div>`;
+					document
+						.querySelector("html")
+						.insertAdjacentHTML("beforeend", preloaderTemplate);
+
+					const preloader = document.querySelector(".fls-preloader"),
+						showPecentLoad = document.querySelector(".fls-preloader__counter"),
+						showLineLoad = document.querySelector(".fls-preloader__line span"),
+						htmlDocument = document.documentElement;
+
+					let imagesLoadedCount = (counter = progress = 0);
+
+					htmlDocument.classList.add("loading");
+					htmlDocument.classList.add("lock");
+
+					preloaderImages.forEach((preloaderImage) => {
+						const imgClone = document.createElement("img");
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							preloaderImage.dataset.src ?
+								(imgClone.src = preloaderImage.dataset.src) :
+								(imgClone.src = preloaderImage.src);
+						}
+					});
+
+					function setValueProgress(progress) {
+						showPecentLoad ? (showPecentLoad.innerText = `${progress}%`) : null;
+						showLineLoad ? (showLineLoad.style.width = `${progress}%`) : null;
+					}
+					showPecentLoad ? setValueProgress(progress) : null;
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round(
+							(100 / preloaderImages.length) * imagesLoadedCount
+						);
+						const intervalId = setInterval(() => {
+							counter >= progress ?
+								clearInterval(intervalId) :
+								setValueProgress(++counter);
+							counter >= 100 ? addLoadedClass() : null;
+						}, 10);
+					}
+
+					function addLoadedClass() {
+						htmlDocument.classList.add("loaded");
+						htmlDocument.classList.remove("lock");
+						htmlDocument.classList.remove("loading");
+						setInterval(() => {
+							preloader.remove();
+							preloaderContainer.remove();
+						}, 500);
+					}
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
 	</div>
 
 </body>
