@@ -6,7 +6,7 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="Olha Kutsybala Fron-end developer" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240108214845" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240110203822" />
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,7 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href="#" class="header__logo">
+				<a href="../index.html" class="header__logo">
 					<svg class="header__logo__svg">
 						<use xlink:href="img/icons/icons.svg#logo"></use>
 					</svg>
@@ -123,141 +123,53 @@
 					<picture><source srcset="img/hero.webp" type="image/webp"><img data-da=".hero__title--secondary, 599" class="hero__img" src="img/hero.jpg" alt="Olha" width="302" height="326" /></picture>
 				</div>
 			</section>
-			<!-- <section class="line">
-          <picture><source srcset="img/line.webp" type="image/webp"><img src="img/line.jpg" alt="" /></picture>
-        </section> -->
 			<section class="projects">
 				<div class="projects__container">
 					<h2 class="title">Projects</h2>
-					<!-- Оболонка слайдера -->
-					<div class="ім'я-блоку__slider swiper">
-						<!-- Частина слайдера, що рухається -->
-						<div class="ім'я-блоку__wrapper swiper-wrapper">
-							<!-- Слайд -->
-							<div class="ім'я-блоку__slide swiper-slide">
+					<div class="projects__content">
+						<h3 class="secondary__title">My project</h3>
+						<ul class="projects__list">
+							<li class="projects__item">
 								<a href="https://fizkylt.com/" class="projects__link" target="_blank" rel="noopener">
-									<img src="" alt="Fizkylt" class="projects__img" />
-									<p class="projects__descr">Fizkylt</p>
+									Fizkylt
 								</a>
-							</div>
-							<div class="ім'я-блоку__slide swiper-slide">
+							</li>
+							<li class="projects__item">
 								<a href="https://olha-kutsybala.github.io/music-school-new/" class="projects__link" target="_blank" rel="noopener">
-									<img src="" alt="Fizkylt" class="projects__img" />
-									<p class="projects__descr">Music school</p>
+									Music school
 								</a>
-							</div>
-							<div class="ім'я-блоку__slide swiper-slide">
-								<a href="https://marinka03.github.io/project-bookshelf/" class="projects__link" target="_blank" rel="noopener">
-									<img src="" alt="Fizkylt" class="projects__img" />
-									<p class="projects__descr">Bookshelf (team project)</p>
-								</a>
-							</div>
-							<div class="ім'я-блоку__slide swiper-slide">
-								<a href="https://nata-curly.github.io/project-mimino_g11/" class="projects__link" target="_blank" rel="noopener">
-									<img src="" alt="Fizkylt" class="projects__img" />
-									<p class="projects__descr">Mimino (team project)</p>
-								</a>
-							</div>
-							<div class="ім'я-блоку__slide swiper-slide">
-								<a href="https://yevgeniy8.github.io/GooseTrack/" class="projects__link" target="_blank" rel="noopener">
-									<img src="" alt="Fizkylt" class="projects__img" />
-									<p class="projects__descr">GooseTrack</p>
-								</a>
-							</div>
-							<div class="ім'я-блоку__slide swiper-slide">
+							</li>
+							<li class="projects__item">
 								<a href="https://olha-kutsybala.github.io/goit-markup-hw-08/" class="projects__link" target="_blank" rel="noopener">
-									<img src="" alt="Fizkylt" class="projects__img" />
-									<p class="projects__descr">Web Studio</p>
+									Web Studio
 								</a>
-							</div>
-							<div class="ім'я-блоку__slide swiper-slide">
-								<a href="https://olha-kutsybala.github.io/car-rent/" class="projects__link" target="_blank" rel="noopener">
-									<img src="" alt="Fizkylt" class="projects__img" />
-									<p class="projects__descr">Car rent</p>
+							</li>
+							<li class="projects__item">
+								<a href="https://marinka03.github.io/project-bookshelf/" class="projects__link" target="_blank" rel="noopener">
+									Bookshelf
+									<span class="projects__descr">(team project)</span>
 								</a>
-							</div>
-						</div>
-						<!-- Якщо потрібна пагінація -->
-						<div class="swiper-pagination"></div>
-						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
-						<!-- <button type="button" class="swiper-button-prev"></button> -->
-						<!-- <button type="button" class="swiper-button-next"></button> -->
-						<!-- Якщо потрібен скролбар -->
-						<div class="swiper-scrollbar"></div>
+							</li>
+							<li class="projects__item">
+								<a href="https://nata-curly.github.io/project-mimino_g11/" class="projects__link" target="_blank" rel="noopener">
+									Mimino
+									<span class="projects__descr">(team project)</span>
+								</a>
+							</li>
+
+							<li class="projects__item">
+								<a href="https://yevgeniy8.github.io/GooseTrack/" class="projects__link" target="_blank" rel="noopener">
+									GooseTrack
+									<span class="projects__descr">(team project)</span>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<!-- <ul class="projects__list">
-              <li class="projects__item">
-                <a
-                  href="https://fizkylt.com/"
-                  class="projects__link"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img src="" alt="Fizkylt" class="projects__img" />
-                  <p class="projects__descr">Fizkylt</p>
-                </a>
-              </li>
-              <li class="projects__item">
-                <a
-                  href="https://fizkylt.com/"
-                  class="projects__link"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img src="" alt="Fizkylt" class="projects__img" />
-                  <p class="projects__descr">Fizkylt</p>
-                </a>
-              </li>
-              <li class="projects__item">
-                <a
-                  href="https://fizkylt.com/"
-                  class="projects__link"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img src="" alt="Fizkylt" class="projects__img" />
-                  <p class="projects__descr">Fizkylt</p>
-                </a>
-              </li>
-              <li class="projects__item">
-                <a
-                  href="https://fizkylt.com/"
-                  class="projects__link"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img src="" alt="Fizkylt" class="projects__img" />
-                  <p class="projects__descr">Fizkylt</p>
-                </a>
-              </li>
-              <li class="projects__item">
-                <a
-                  href="https://fizkylt.com/"
-                  class="projects__link"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img src="" alt="Fizkylt" class="projects__img" />
-                  <p class="projects__descr">Fizkylt</p>
-                </a>
-              </li>
-              <li class="projects__item">
-                <a
-                  href="https://fizkylt.com/"
-                  class="projects__link"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img src="" alt="Fizkylt" class="projects__img" />
-                  <p class="projects__descr">Fizkylt</p>
-                </a>
-              </li>
-            </ul> -->
 				</div>
 			</section>
-			<section class="skills" data-prlx-parent>
-				<div class="skills__container" data-prlx>
-					<h2 class="title">Skills and Technologies</h2>
+			<section class="skills">
+				<div class="skills__container">
+					<h2 class="title title--white">Skills and Technologies</h2>
 					<div class="skills__box">
 						<div class="skills__list__box">
 							<h3 class="title skills__title">Soft skills</h3>
@@ -297,7 +209,7 @@
 						</div>
 						<div class="skills__list__box">
 							<h3 class="title skills__title">Tech skills</h3>
-							<ul class="skills__list">
+							<ul class="skills__list skills__list--gap">
 								<li class="skills__item">
 									<svg width="18" height="18" class="skills__icon">
 										<use xlink:href="img/icons/icons.svg#icon-checkmark"></use>
@@ -354,70 +266,48 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<div class="footer__contact">
-					<a href="#" class="logo footer__logo">OK</a>
-					<div>
-						<ul class="list footer__contact__list">
-							<li class="footer__contact__item">
-								<a href="mailto:olhakutsybala@gmail.com" lang="en" class="link contact-link">
-									<svg class="footer__icon" width="18" height="18">
-										<use xlink:href="img/icons/icons.svg#icon-mail"></use>
-									</svg>
-									olhakutsybala@gmail.com
-								</a>
-							</li>
-							<li class="footer__contact-item">
-								<a href="tel:+380971649775" class="link contact-link">
-									<svg class="footer__icon" width="18" height="18">
-										<use xlink:href="img/icons/icons.svg#icon-mobile"></use>
-									</svg>
-									+38 097 16 49 775</a>
-							</li>
-						</ul>
-						<ul class="social__list footer__social__list">
-							<li>
-								<a class="social__item" href="https://www.instagram.com/olya_kutsybala_sheremeta/" target="_blank" rel="noopener">
-									<svg width="24" height="24">
-										<use xlink:href="img/icons/icons.svg#icon-instagram"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.facebook.com/profile.php?id=100017937974849" class="social__item" target="_blank" rel="noopener">
-									<svg width="24" height="24">
-										<use xlink:href="img/icons/icons.svg#icon-facebook"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="https://t.me/OlhaKutsybala" class="social__item" target="_blank" rel="noopener">
-									<svg width="24" height="24">
-										<use xlink:href="img/icons/icons.svg#icon-telegram"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/Olha-Kutsybala" class="social__item" target="_blank" rel="noopener">
-									<svg width="24" height="24">
-										<use xlink:href="img/icons/icons.svg#icon-github"></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</div>
+				<div class="footer__content">
+					<a href="../index.html" class="footer__svg">
+						<svg class="footer__logo__svg">
+							<use xlink:href="img/icons/icons.svg#logo"></use>
+						</svg>
+					</a>
+					<p class="footer__descr">
+						Ready to solve your problem in the best way! Let's work effectively and
+						comfortably together!
+					</p>
 				</div>
+				<ul class="list footer__contact__list">
+					<li class="footer__contact__item">
+						<a href="mailto:olhakutsybala@gmail.com" lang="en" class="link footer__contact__link">
+							<svg class="footer__icon" width="24" height="24">
+								<use xlink:href="img/icons/icons.svg#mail"></use>
+							</svg>
+							olhakutsybala@gmail.com
+						</a>
+					</li>
+					<li class="footer__contact__item">
+						<a href="tel:+380971649775" class="link footer__contact__link">
+							<svg class="footer__icon" width="24" height="24">
+								<use xlink:href="img/icons/icons.svg#phone"></use>
+							</svg>
+							+38 097 16 49 775</a>
+					</li>
+				</ul>
+
 				<div class="footer__create">
-					<a href="https://www.instagram.com/kutsybalaaa/" target="_blank" rel="noopener" class="link footer-create-link">
+					<a href="https://www.instagram.com/kutsybalaaa/" target="_blank" rel="noopener" class="link">
 						Designed by Nadia Kutsybala
 					</a>
-					<a href="https://www.instagram.com/olya_kutsybala_sheremeta/" target="_blank" rel="noopener" class="link footer-create-link">
+					<a href="https://www.instagram.com/olya_kutsybala_sheremeta/" target="_blank" rel="noopener" class="link">
 						Developed by Olha Kutsybala
 					</a>
 				</div>
+			</div>
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20240108214845"></script>
+	<script src="js/app.min.js?_v=20240110203822"></script>
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
