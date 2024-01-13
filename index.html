@@ -5,8 +5,12 @@
 	<title>Olha Kutsybala Fron-end developer</title>
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="Olha Kutsybala Fron-end developer" />
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240112144312" />
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240113213655" />
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -76,7 +80,7 @@
 		</header>
 
 		<main class="page">
-			<section class="hero">
+			<section data-watch="navigator" data-watch-threshold="0.3" data-watch-once class="hero">
 				<div class="hero__container">
 					<div class="hero__content">
 						<h1 class="hero__title">OLHA KUTSYBALA</h1>
@@ -123,55 +127,61 @@
 					<picture><source srcset="img/hero.webp" type="image/webp"><img data-da=".hero__title--secondary, 599" class="hero__img" src="img/hero.jpg" alt="Olha" width="302" height="326" /></picture>
 				</div>
 			</section>
-			<section class="projects">
+			<section data-watch="navigator" data-watch-threshold="0.3" data-watch-once class="projects">
 				<div class="projects__container">
 					<h2 class="title">Projects</h2>
 					<div class="projects__content">
 						<h3 class="secondary__title">My project</h3>
-						<ul class="projects__list">
-							<li class="projects__item">
-								<a href="https://fizkylt.com/" class="projects__link" target="_blank" rel="noopener">
-									Fizkylt
-								</a>
-							</li>
-							<li class="projects__item">
-								<a href="https://olha-kutsybala.github.io/music-school-new/" class="projects__link" target="_blank" rel="noopener">
-									Music school
-								</a>
-							</li>
-							<li class="projects__item">
-								<a href="https://olha-kutsybala.github.io/goit-markup-hw-08/" class="projects__link" target="_blank" rel="noopener">
-									Web Studio
-								</a>
-							</li>
-							<li class="projects__item">
-								<a href="https://marinka03.github.io/project-bookshelf/" class="projects__link" target="_blank" rel="noopener">
-									Bookshelf
-									<span class="projects__descr">(team project)</span>
-								</a>
-							</li>
-							<li class="projects__item">
-								<a href="https://nata-curly.github.io/project-mimino_g11/" class="projects__link" target="_blank" rel="noopener">
-									Mimino
-									<span class="projects__descr">(team project)</span>
-								</a>
-							</li>
+						<div data-showmore="items" data-showmore-media="768,max">
+							<ul data-showmore-content class="projects__list">
+								<li class="projects__item">
+									<a href="https://fizkylt.com/" class="projects__link" target="_blank" rel="noopener">
+										Fizkylt
+									</a>
+								</li>
+								<li class="projects__item">
+									<a href="https://olha-kutsybala.github.io/music-school-new/" class="projects__link" target="_blank" rel="noopener">
+										Music school
+									</a>
+								</li>
+								<li class="projects__item">
+									<a href="https://olha-kutsybala.github.io/goit-markup-hw-08/" class="projects__link" target="_blank" rel="noopener">
+										Web Studio
+									</a>
+								</li>
+								<li class="projects__item">
+									<a href="https://marinka03.github.io/project-bookshelf/" class="projects__link" target="_blank" rel="noopener">
+										Bookshelf
+										<span class="projects__descr">(team project)</span>
+									</a>
+								</li>
+								<li class="projects__item">
+									<a href="https://nata-curly.github.io/project-mimino_g11/" class="projects__link" target="_blank" rel="noopener">
+										Mimino
+										<span class="projects__descr">(team project)</span>
+									</a>
+								</li>
 
-							<li class="projects__item">
-								<a href="https://yevgeniy8.github.io/GooseTrack/" class="projects__link" target="_blank" rel="noopener">
-									GooseTrack
-									<span class="projects__descr">(team project)</span>
-								</a>
-							</li>
-						</ul>
+								<li class="projects__item">
+									<a href="https://yevgeniy8.github.io/GooseTrack/" class="projects__link" target="_blank" rel="noopener">
+										GooseTrack
+										<span class="projects__descr">(team project)</span>
+									</a>
+								</li>
+							</ul>
+							<button hidden data-showmore-button type="button" class="show__more button">
+								<span>Show more</span>
+								<span>Hide</span>
+							</button>
+						</div>
 					</div>
 				</div>
 			</section>
-			<section class="skills">
+			<section class="skills" data-watch="navigator" data-watch-threshold="0.3" data-watch-once>
 				<div class="skills__container">
 					<h2 class="title title--white">Skills and Technologies</h2>
 					<div class="skills__box">
-						<div class="skills__list__box">
+						<div class="skills__list__box skills__list__box--left">
 							<h3 class="title skills__title">Soft skills</h3>
 							<ul class="skills__list">
 								<li class="skills__item">
@@ -207,7 +217,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="skills__list__box">
+						<div class="skills__list__box skills__list__box--right">
 							<h3 class="title skills__title">Tech skills</h3>
 							<ul class="skills__list skills__list--gap">
 								<li class="skills__item">
@@ -264,12 +274,12 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" data-watch="navigator">
 			<div class="footer__container">
 				<div class="footer__content">
 					<a href="../index.html" class="footer__svg">
 						<svg class="footer__logo__svg">
-							<use xlink:href="img/icons/icons.svg#logo"></use>
+							<use xlink:href="img/icons/icons.svg#icon-footer-logo"></use>
 						</svg>
 					</a>
 					<div>
@@ -327,7 +337,7 @@
 							<input type="email" name="email" data-error="Enter your email" placeholder="E-mail" class="input" data-required="email" data-validate />
 						</div>
 						<div class="form__item">
-							<input autocomplete="off" type="tel" name="phone" data-error="Enter your phone" placeholder="Phone" class="input form__input" data-required data-validate />
+							<input autocomplete="off" type="tel" name="phone" data-error="Enter your phone" placeholder="+380960000000" class="input form__input" data-required data-validate pattern="\+?[0-9\s\-\(\)]+" minlength="13" maxlength="13" />
 						</div>
 						<div class="form__item">
 							<textarea autocomplete="on" type="text" name="message" data-error="Message" placeholder="Message" class="input form__input">
@@ -339,7 +349,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240112144312"></script>
+	<script src="js/app.min.js?_v=20240113213655"></script>
 </body>
 
 </html>
