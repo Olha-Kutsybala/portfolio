@@ -200,8 +200,8 @@ body {
 }
 
 .form__button:hover {
-  border-color: #3945af;
-  background-color: #3945af;
+  border-color: rgba(245, 245, 245, 0.6);
+  background-color: rgba(245, 245, 245, 0.6);
 }
 
 .form__error {
@@ -477,8 +477,8 @@ body::after {
 }
 
 .popup__close:hover {
-  stroke: #3945af;
-  border-color: #3945af;
+  stroke: rgba(245, 245, 245, 0.6);
+  border-color: rgba(245, 245, 245, 0.6);
 }
 
 [data-showmore-button] span:last-child {
@@ -707,7 +707,7 @@ body::after {
 }
 
 .footer__contact__link:hover {
-  fill: #3945af;
+  fill: rgba(245, 245, 245, 0.6);
 }
 
 .footer__create {
@@ -754,9 +754,9 @@ body::after {
   transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
   transition: transform 0.6s ease, opacity 0.6s ease;
   transition: transform 0.6s ease, opacity 0.6s ease, -webkit-transform 0.6s ease;
-  -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+          transform: translateY(20%);
 }
 
 ._watcher-view .hero__title {
@@ -774,9 +774,9 @@ body::after {
   transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
   transition: transform 0.5s ease, opacity 0.5s ease;
   transition: transform 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+          transform: translateY(20%);
 }
 
 ._watcher-view .hero__title--secondary {
@@ -794,9 +794,9 @@ body::after {
   transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
   transition: transform 0.5s ease, opacity 0.5s ease;
   transition: transform 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(20%);
+      -ms-transform: translateX(20%);
+          transform: translateX(20%);
 }
 
 ._watcher-view .hero__img {
@@ -808,6 +808,20 @@ body::after {
 
 .hero__button__box {
   max-width: 31.375rem;
+  -webkit-transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
+  transition: opacity 0.4s ease, -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+._watcher-view .hero__button__box {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .hero__button__contact {
@@ -816,14 +830,13 @@ body::after {
   background-color: rgba(245, 245, 245, 0.6);
   width: 100%;
   text-transform: uppercase;
-  -webkit-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
-  transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .hero__button__contact:hover {
   color: #f5f5f5;
-  background-color: #3945af;
-  border-color: #3945af;
+  background-color: rgba(245, 245, 245, 0.3);
 }
 
 .hero__button__cv {
@@ -832,14 +845,13 @@ body::after {
   border: 1px solid #f5f5f5;
   background-color: rgba(245, 245, 245, 0.2);
   text-transform: uppercase;
-  -webkit-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
-  transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+  -webkit-transition: color 0.5s ease, background-color 0.5s ease;
+  transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 .hero__button__cv:hover {
-  color: #f5f5f5;
-  background-color: #3945af;
-  border-color: #3945af;
+  color: #000;
+  background-color: rgba(245, 245, 245, 0.6);
 }
 
 .no-webp .projects{
@@ -871,10 +883,14 @@ body::after {
   color: #f5f5f5;
   border-radius: 6.25rem;
   border: 1px solid #f5f5f5;
+  -webkit-transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+  transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
 }
 
 .projects__link:hover {
-  background-color: #3945af;
+  color: black;
+  background-color: rgba(245, 245, 245, 0.6);
+  border-color: #6e87bd;
 }
 
 .projects__item {
