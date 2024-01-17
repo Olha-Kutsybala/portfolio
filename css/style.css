@@ -560,6 +560,54 @@ body::after {
   width: 7.5rem;
 }
 
+.animate {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: translate(0px, 15%);
+      -ms-transform: translate(0px, 15%);
+          transform: translate(0px, 15%);
+}
+
+._watcher-view .animate {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+._watcher-view .animate:nth-child(1) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+._watcher-view .animate:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+._watcher-view .animate:nth-child(3) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+._watcher-view .animate:nth-child(4) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+._watcher-view .animate:nth-child(5) {
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+._watcher-view .animate:nth-child(6) {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -1576,54 +1624,6 @@ body::after {
 @media (max-width: 47.99875em) {
   .secondary__title {
     display: none;
-  }
-
-  .animate {
-    opacity: 0;
-    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-    transition: opacity 0.5s, -webkit-transform 0.5s;
-    transition: transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
-    -webkit-transform: translate(0px, 15%);
-        -ms-transform: translate(0px, 15%);
-            transform: translate(0px, 15%);
-  }
-
-  ._watcher-view .animate {
-    -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-            transform: translate(0, 0);
-    opacity: 1;
-  }
-
-  ._watcher-view .animate:nth-child(1) {
-    -webkit-transition-delay: 0.15s;
-            transition-delay: 0.15s;
-  }
-
-  ._watcher-view .animate:nth-child(2) {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
-  }
-
-  ._watcher-view .animate:nth-child(3) {
-    -webkit-transition-delay: 0.45s;
-            transition-delay: 0.45s;
-  }
-
-  ._watcher-view .animate:nth-child(4) {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
-  }
-
-  ._watcher-view .animate:nth-child(5) {
-    -webkit-transition-delay: 0.75s;
-            transition-delay: 0.75s;
-  }
-
-  ._watcher-view .animate:nth-child(6) {
-    -webkit-transition-delay: 0.9s;
-            transition-delay: 0.9s;
   }
 
   .menu__body {
