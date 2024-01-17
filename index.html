@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Olha Kutsybala - Fron-end developer</title>
+	<title data-lang="home_page-title">Olha Kutsybala - Fron-end developer</title>
 	<meta charset="UTF-8" />
 	<meta name="description" content="Olha Kutsybala - Fron-end developer" />
 	<style>
@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240115201350" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240117120606" />
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,16 +29,16 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="#" class="menu__link" data-goto=".hero">About</a>
+								<a href="#" class="menu__link" data-goto=".hero" data-lang="lang-header-about">About</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link" data-goto=".skills">Skills</a>
+								<a href="#" class="menu__link" data-goto=".projects" data-lang="lang-header-project">Projects</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link" data-goto=".projects">Projects</a>
+								<a href="#" class="menu__link" data-goto=".skills" data-lang="lang-header-skills">Skills</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link" data-goto=".footer">Contacts</a>
+								<a href="#" class="menu__link" data-goto=".footer" data-lang="lang-header-contact">Contacts</a>
 							</li>
 						</ul>
 					</nav>
@@ -75,9 +75,19 @@
 						</li>
 					</ul>
 				</div>
-				<button type="button" class="menu__icon icon-menu" aria-label="menu">
-					<span></span>
-				</button>
+				<div class="header__btn__box">
+					<div>
+						<button class="header__lang__btn" aria-label="ua" data-btn="ua">
+							Ua
+						</button>
+						<button class="header__lang__btn" aria-label="en" data-btn="en">
+							En
+						</button>
+					</div>
+					<button type="button" class="menu__icon icon-menu" aria-label="menu">
+						<span></span>
+					</button>
+				</div>
 			</div>
 		</header>
 
@@ -85,15 +95,17 @@
 			<section data-watch="navigator" data-watch-threshold="0.3" data-watch-once class="hero">
 				<div class="hero__container">
 					<div class="hero__content">
-						<h1 class="hero__title animate">OLHA KUTSYBALA</h1>
+						<h1 class="hero__title animate" data-lang="lang-hero-title">
+							OLHA KUTSYBALA
+						</h1>
 						<h2 class="hero__title--secondary animate">
 							Front-End Developer
 						</h2>
 						<div class="hero__button__box animate">
-							<button class="hero__button__contact button" type="submit" data-popup="#popup">
+							<button class="hero__button__contact button" type="submit" data-popup="#popup" data-lang="lang-hero-contact-btn">
 								Contact me
 							</button>
-							<a href="https://drive.google.com/file/d/1acby8hn0wZpTadG9z1k-1-lwOC0OqHw6/view?usp=sharing" class="hero__button__cv button" target="_blank" rel="noopener">Download CV</a>
+							<a href="https://drive.google.com/file/d/1acby8hn0wZpTadG9z1k-1-lwOC0OqHw6/view?usp=sharing" class="hero__button__cv button" target="_blank" rel="noopener" data-lang="lang-hero-cv-btn">Download CV</a>
 							<div class="social animate">
 								<ul class="social__list">
 									<li>
@@ -133,9 +145,11 @@
 			</section>
 			<section data-watch="navigator" data-watch-threshold="0.3" data-watch-once class="projects">
 				<div class="projects__container">
-					<h2 class="title">Projects</h2>
+					<h2 class="title" data-lang="lang-project-title">Projects</h2>
 					<div class="projects__content">
-						<h3 class="secondary__title">My project</h3>
+						<h3 class="secondary__title" data-lang="lang-project-sub-title">
+							My project
+						</h3>
 						<div data-showmore="items" data-showmore-media="768,max">
 							<ul data-showmore-content class="projects__list">
 								<li class="projects__item animate">
@@ -174,8 +188,8 @@
 								</li>
 							</ul>
 							<button hidden data-showmore-button type="button" class="show__more button">
-								<span>Show more</span>
-								<span>Hide</span>
+								<span data-lang="lang-project-show">Show more</span>
+								<span data-lang="lang-project-hide">Hide</span>
 							</button>
 						</div>
 					</div>
@@ -183,7 +197,9 @@
 			</section>
 			<section class="skills" data-watch="navigator" data-watch-threshold="0.3" data-watch-once>
 				<div class="skills__container">
-					<h2 class="title title--white">Skills and Technologies</h2>
+					<h2 class="title title--white" data-lang="lang-skills-title">
+						Skills and Technologies
+					</h2>
 					<div class="skills__box">
 						<div class="skills__list__box skills__list__box--left">
 							<h3 class="title skills__title">Soft skills</h3>
@@ -192,7 +208,7 @@
 									<svg width="18" height="18" class="skills__icon">
 										<use xlink:href="img/icons/icons.svg#icon-checkmark"></use>
 									</svg>
-									<p>
+									<p data-lang="lang-soft-skills-1">
 										I am organised, flexible and passionate frontend
 										developer, who want to make websites look great and
 										convert visitors into leads
@@ -202,7 +218,7 @@
 									<svg width="18" height="18" class="skills__icon">
 										<use xlink:href="img/icons/icons.svg#icon-checkmark"></use>
 									</svg>
-									<p>
+									<p data-lang="lang-soft-skills-2">
 										I know how to find the information I need, I can solve
 										problems and make decisions on my own
 									</p>
@@ -211,13 +227,17 @@
 									<svg width="18" height="18" class="skills__icon">
 										<use xlink:href="img/icons/icons.svg#icon-checkmark"></use>
 									</svg>
-									<p>I love to constantly learn new things</p>
+									<p data-lang="lang-soft-skills-3">
+										I love to constantly learn new things
+									</p>
 								</li>
 								<li class="skills__item">
 									<svg width="18" height="18" class="skills__icon">
 										<use xlink:href="img/icons/icons.svg#icon-checkmark"></use>
 									</svg>
-									<p>Communication and teamwork</p>
+									<p data-lang="lang-soft-skills-4">
+										Communication and teamwork
+									</p>
 								</li>
 							</ul>
 						</div>
@@ -287,7 +307,7 @@
 						</svg>
 					</a>
 					<div>
-						<p class="footer__descr">
+						<p class="footer__descr" data-lang="lang-footer-descr">
 							Ready to solve your problem in the best way! Let's work effectively
 							and comfortably together!
 						</p>
@@ -353,7 +373,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240115201350"></script>
+	<script src="js/app.min.js?_v=20240117120606"></script>
 </body>
 
 </html>

@@ -596,6 +596,25 @@ body::after {
   fill: #d9d9d9;
 }
 
+.header__btn__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.75rem;
+}
+
+.header__lang__btn {
+  padding: 0.25rem;
+}
+
+.header__lang__btn_active {
+  border: 1px solid #d9d9d9;
+  border-radius: 0.5rem;
+}
+
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;

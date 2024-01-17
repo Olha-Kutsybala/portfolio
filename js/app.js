@@ -995,6 +995,147 @@
     }
     const da = new DynamicAdapt("max");
     da.init();
+    const langButtons = document.querySelectorAll("[data-btn]");
+    const allLangs = [ "ua", "en" ];
+    const currentPathName = window.location.pathname;
+    let currentLang = localStorage.getItem("language") || checkBrowserLang() || "en";
+    let currentTexts = {};
+    const homeTexts = {
+        "home_page-title": {
+            ua: "Ольга Куцибала Front-end розробник",
+            en: "Olha Kutsybala - Fron-end developer"
+        },
+        "lang-hero-title": {
+            ua: "Ольга Куцибала",
+            en: "Olha Kutsybala"
+        },
+        "lang-hero-contact-btn": {
+            ua: "Зв'язатися зі мною",
+            en: "Contact me"
+        },
+        "lang-hero-cv-btn": {
+            ua: "Скачати резюме",
+            en: "Download CV"
+        },
+        "lang-project-title": {
+            ua: "Проекти",
+            en: "Project",
+            de: "Eine andere Seite"
+        },
+        "lang-project-sub-title": {
+            ua: "Мої проекти",
+            en: "My project"
+        },
+        "lang-project-show": {
+            ua: "Показати ще",
+            en: "Show more"
+        },
+        "lang-project-hide": {
+            ua: "Приховати",
+            en: "Hide"
+        },
+        "lang-skills-title": {
+            ua: "Навички і технології",
+            en: "Skills and Technologies"
+        },
+        "lang-soft-skills-1": {
+            ua: "Я організована, гнучка і пристрасна інтерфейс-розробниця, прагну, щоб веб-сайти виглядали чудово та перетворювали відвідувачів на потенційних клієнтів",
+            en: "I am organised, flexible and passionate frontend developer, who want to make websites look great and convert visitors into leads"
+        },
+        "lang-soft-skills-1": {
+            ua: "Я організована, гнучка і пристрасна інтерфейс-розробниця, прагну, щоб веб-сайти виглядали чудово та перетворювали відвідувачів на потенційних клієнтів",
+            en: "I am organised, flexible and passionate frontend developer, who want to make websites look great and convert visitors into leads"
+        },
+        "lang-soft-skills-2": {
+            ua: "Вмію знаходити потрібну інформацію, можу самостійно вирішувати проблеми та приймати рішення",
+            en: "I know how to find the information I need, I can solve problems and make decisions on my own"
+        },
+        "lang-soft-skills-3": {
+            ua: "Обожнюю постійно навчатися новому",
+            en: "I love to constantly learn new things"
+        },
+        "lang-soft-skills-4": {
+            ua: "Комунікабельність і командна робота",
+            en: "Communication and teamwork"
+        },
+        "lang-footer-descr": {
+            ua: "Готова вирішити вашу проблему найкращим чином! Давайте працювати ефективно та комфортно разом!",
+            en: "Ready to solve your problem in the best way! Let's work effectively and comfortably together!"
+        },
+        "lang-header-about": {
+            ua: "Про мене",
+            en: "About"
+        },
+        "lang-header-project": {
+            ua: "Проекти",
+            en: "Project"
+        },
+        "lang-header-skills": {
+            ua: "Навички",
+            en: "Skills"
+        },
+        "lang-header-contact": {
+            ua: "Контакти",
+            en: "Contacts"
+        }
+    };
+    function checkPagePathName() {
+        switch (currentPathName) {
+          case "/index.html":
+            currentTexts = homeTexts;
+            break;
+
+          default:
+            currentTexts = homeTexts;
+            break;
+        }
+    }
+    checkPagePathName();
+    function changeLang() {
+        for (const key in currentTexts) {
+            let elem = document.querySelector(`[data-lang=${key}]`);
+            if (elem) elem.textContent = currentTexts[key][currentLang];
+        }
+    }
+    changeLang();
+    langButtons.forEach((btn => {
+        btn.addEventListener("click", (event => {
+            if (!event.target.classList.contains("header__lang__btn_active")) {
+                currentLang = event.target.dataset.btn;
+                localStorage.setItem("language", event.target.dataset.btn);
+                resetActiveClass(langButtons, "header__lang__btn_active");
+                btn.classList.add("header__lang__btn_active");
+                changeLang();
+            }
+        }));
+    }));
+    function resetActiveClass(arr, activeClass) {
+        arr.forEach((elem => {
+            elem.classList.remove(activeClass);
+        }));
+    }
+    function checkActiveLangButton() {
+        switch (currentLang) {
+          case "ua":
+            document.querySelector('[data-btn="ua"]').classList.add("header__lang__btn_active");
+            break;
+
+          case "en":
+            document.querySelector('[data-btn="en"]').classList.add("header__lang__btn_active");
+            break;
+
+          default:
+            document.querySelector('[data-btn="en"]').classList.add("header__lang__btn_active");
+            break;
+        }
+    }
+    checkActiveLangButton();
+    function checkBrowserLang() {
+        const navLang = navigator.language.slice(0, 2).toLowerCase();
+        const result = allLangs.some((elem => elem === navLang));
+        if (result) return navLang;
+    }
+    console.log("navigator.language", checkBrowserLang());
     window["FLS"] = true;
     isWebp();
     addLoadedClass();
