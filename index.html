@@ -10,7 +10,7 @@
       opacity: 0;
     }
   </style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240118162044" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240202201349" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -93,13 +93,13 @@
 
 		<main class="page">
 			<section data-watch="navigator" data-watch-threshold="0.3" data-watch-once class="hero">
-				<div class="hero__container">
+				<div class="hero__box">
 					<div class="hero__content">
 						<h1 class="hero__title animate" data-lang="lang-hero-title">
 							OLHA KUTSYBALA
 						</h1>
-						<h2 class="hero__title--secondary animate">
-							Front-End Developer
+						<h2 class="hero__title--secondary">
+							<span class="hero__title--secondary" id="element">Front-End Developer</span>
 						</h2>
 						<div class="hero__button__box animate">
 							<button class="hero__button__contact button" type="submit" data-popup="#popup" data-lang="lang-hero-contact-btn">
@@ -140,7 +140,7 @@
 							</div>
 						</div>
 					</div>
-					<picture><source srcset="img/hero.webp" type="image/webp"><img data-da=".hero__title--secondary, 599" class="hero__img animate" src="img/hero.jpg" alt="Olha" width="302" height="326" /></picture>
+					<picture><source srcset="img/hero.webp" type="image/webp"><img data-da=".hero__title--secondary, 599" class="hero__img animate" src="img/hero.jpg" alt="Olha" width="306" height="326" /></picture>
 				</div>
 			</section>
 			<section data-watch="navigator" data-watch-threshold="0.3" data-watch-once class="projects">
@@ -373,7 +373,244 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240118162044"></script>
+	<!-- Стилі для body -->
+	<!-- <style>
+  .lock body {
+    overflow: hidden;
+    touch-action: none;
+    overscroll-behavior: none;
+  }
+  .loading body {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .loaded body {
+    transition: opacity 0.5s ease 0s;
+    opacity: 1;
+    visibility: visible;
+  }
+</style> -->
+	<!-- <div id="fls-preloader"> -->
+	<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+	<!-- Стилі для прелоадера -->
+	<!-- <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+    }
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+    html {
+      overflow: hidden;
+      touch-action: none;
+      overscroll-behavior: none;
+    }
+    /* Головний блок */
+    .fls-preloader {
+      pointer-events: none;
+      z-index: -1;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* Блок з елементами */
+    .fls-preloader__body {
+      padding: 0.93rem;
+      max-width: 31.25rem;
+      display: flex;
+      flex-direction: column;
+    }
+    /* Блок з лічильником */
+    .fls-preloader__counter {
+      font-size: 2rem;
+    }
+    /* Прогресбар */
+    .fls-preloader__line {
+    }
+    /* Лінія прогресбару */
+    .fls-preloader__line span {
+      display: inline-block;
+      transition: width 0.2s ease;
+      height: 0.8rem;
+      background-color: #7a956b;
+    }
+  </style> -->
+	<!-- Скріпт прелоадера -->
+	<!-- <script>
+    function preloader() {
+      const preloaderImages = document.querySelector("[data-preloader]")
+        ? document.querySelectorAll("[data-preloader] img")
+        : document.querySelectorAll("img");
+      const preloaderContainer = document.querySelector("#fls-preloader");
+      if (preloaderImages.length) {
+        const preloaderTemplate = `
+    			<div class="fls-preloader">
+    				<div class="fls-preloader__body">
+    					<div class="fls-preloader__counter">0%</div>
+    					<div class="fls-preloader__line"><span></span></div>
+    				</div>
+    			</div>`;
+        document
+          .querySelector("html")
+          .insertAdjacentHTML("beforeend", preloaderTemplate);
+
+        const preloader = document.querySelector(".fls-preloader"),
+          showPecentLoad = document.querySelector(".fls-preloader__counter"),
+          showLineLoad = document.querySelector(".fls-preloader__line span"),
+          htmlDocument = document.documentElement;
+
+        let imagesLoadedCount = (counter = progress = 0);
+
+        htmlDocument.classList.add("loading");
+        htmlDocument.classList.add("lock");
+
+        preloaderImages.forEach((preloaderImage) => {
+          const imgClone = document.createElement("img");
+          if (imgClone) {
+            imgClone.onload = imageLoaded;
+            imgClone.onerror = imageLoaded;
+            preloaderImage.dataset.src
+              ? (imgClone.src = preloaderImage.dataset.src)
+              : (imgClone.src = preloaderImage.src);
+          }
+        });
+        function setValueProgress(progress) {
+          showPecentLoad ? (showPecentLoad.innerText = `${progress}%`) : null;
+          showLineLoad ? (showLineLoad.style.width = `${progress}%`) : null;
+        }
+        showPecentLoad ? setValueProgress(progress) : null;
+
+        function imageLoaded() {
+          imagesLoadedCount++;
+          progress = Math.round(
+            (100 / preloaderImages.length) * imagesLoadedCount
+          );
+          const intervalId = setInterval(() => {
+            counter >= progress
+              ? clearInterval(intervalId)
+              : setValueProgress(++counter);
+            counter >= 100 ? addLoadedClass() : null;
+          }, 10);
+        }
+        function addLoadedClass() {
+          htmlDocument.classList.add("loaded");
+          htmlDocument.classList.remove("lock");
+          htmlDocument.classList.remove("loading");
+          setInterval(() => {
+            preloader.remove();
+            preloaderContainer.remove();
+          }, 500);
+        }
+      } else {
+        preloaderContainer.remove();
+      }
+    }
+    preloader();
+  </script> -->
+	<!-- </div> -->
+
+	<div class="preloader">
+		<div class="preloader__row">
+			<div class="preloader__item"></div>
+			<div class="preloader__item"></div>
+		</div>
+	</div>
+	<style>
+		.preloader {
+			position: fixed;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			background: #e0e0e0;
+			z-index: 1001;
+		}
+
+		.preloader__row {
+			position: relative;
+			top: 50%;
+			left: 50%;
+			width: 70px;
+			height: 70px;
+			margin-top: -35px;
+			margin-left: -35px;
+			text-align: center;
+			animation: preloader-rotate 2s infinite linear;
+		}
+
+		.preloader__item {
+			position: absolute;
+			display: inline-block;
+			top: 0;
+			background-color: #6e87bd;
+			border-radius: 100%;
+			width: 35px;
+			height: 35px;
+			animation: preloader-bounce 2s infinite ease-in-out;
+		}
+
+		.preloader__item:last-child {
+			top: auto;
+			bottom: 0;
+			animation-delay: -1s;
+		}
+
+		@keyframes preloader-rotate {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes preloader-bounce {
+
+			0%,
+			100% {
+				transform: scale(0);
+			}
+
+			50% {
+				transform: scale(1);
+			}
+		}
+
+		.loaded_hiding .preloader {
+			transition: 0.3s opacity;
+			opacity: 0;
+		}
+
+		.loaded .preloader {
+			display: none;
+		}
+	</style>
+
+	<script>
+		window.onload = function() {
+			document.body.classList.add("loaded_hiding");
+			window.setTimeout(function() {
+				document.body.classList.add("loaded");
+				document.body.classList.remove("loaded_hiding");
+			}, 500);
+		};
+	</script>
+
+	<script src="js/app.min.js?_v=20240202201349"></script>
+	<script src="dist/notiflix-aio-X.X.X.min.js?_v=20240202201349"></script>
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js?_v=20240202201349"></script>
+	<script>
+		const typed = new Typed("#element", {
+			strings: ["Front-end developer"],
+			typeSpeed: 70,
+		});
+	</script>
 </body>
 
 </html>
