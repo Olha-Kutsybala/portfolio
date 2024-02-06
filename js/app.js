@@ -1136,6 +1136,32 @@
         if (result) return navLang;
     }
     console.log("navigator.language", checkBrowserLang());
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+    const skillsList = document.querySelector(".skills__list__box");
+    const numCircles = 3;
+    for (let i = 0; i < numCircles; i++) {
+        const circle = document.createElement("div");
+        circle.className = "animation-circle";
+        circle.style.top = `${getRandomInt(0, 100)}%`;
+        circle.style.left = `${getRandomInt(0, 100)}%`;
+        circle.style.animationDuration = `${getRandomInt(8, 15)}s`;
+        skillsList.appendChild(circle);
+    }
+    function getRandomInt1(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+    const skillsList1 = document.querySelector(".skills__list__box--right");
+    const numCircles1 = 3;
+    for (let i = 0; i < numCircles1; i++) {
+        const circle = document.createElement("div");
+        circle.className = "animation-circle";
+        circle.style.top = `${getRandomInt1(0, 100)}%`;
+        circle.style.left = `${getRandomInt1(0, 100)}%`;
+        circle.style.animationDuration = `${getRandomInt1(8, 15)}s`;
+        skillsList1.appendChild(circle);
+    }
     window["FLS"] = true;
     isWebp();
     addLoadedClass();
