@@ -10,7 +10,7 @@
       opacity: 0;
     }
   </style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240307210636" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240412162414" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -143,66 +143,199 @@
 					<picture><source srcset="img/hero.webp" type="image/webp"><img data-da=".hero__title--secondary, 599" class="hero__img animate" src="img/hero.jpg" alt="Olha" width="306" height="326" /></picture>
 				</div>
 			</section>
+			<section>
+				<div class="line__container line"></div>
+			</section>
 			<section data-watch="navigator" data-watch-threshold="0.3" data-watch-once class="projects">
 				<div class="projects__container">
 					<h2 class="title" data-lang="lang-project-title">Projects</h2>
-					<div class="projects__content">
-						<h3 class="secondary__title" data-lang="lang-project-sub-title">
-							My project
-						</h3>
-						<div data-showmore="items" data-showmore-media="768,max">
-							<ul data-showmore-content class="projects__list">
-								<li class="projects__item animate">
-									<a href="https://fizkylt.com/" class="projects__link" target="_blank" rel="noopener">
-										Anna Gorpynchuk
-									</a>
-								</li>
-								<li class="projects__item animate">
-									<a href="https://inspire-design.netlify.app/" class="projects__link" target="_blank" rel="noopener">
-										Inspire Design
-									</a>
-								</li>
-								<li class="projects__item animate">
-									<a href="https://sale-olesya.netlify.app/" class="projects__link" target="_blank" rel="noopener">
-										Site for an expert
-									</a>
-								</li>
-								<li class="projects__item animate">
-									<a href="https://olha-kutsybala.github.io/music-school-new/" class="projects__link" target="_blank" rel="noopener">
-										Music school
-									</a>
-								</li>
-								<li class="projects__item animate">
-									<a href="https://olha-kutsybala.github.io/goit-markup-hw-08/" class="projects__link" target="_blank" rel="noopener">
-										Web Studio
-									</a>
-								</li>
-								<li class="projects__item animate">
-									<a href="https://marinka03.github.io/project-bookshelf/" class="projects__link" target="_blank" rel="noopener">
+					<!-- <div class="projects__content"> -->
+					<div class="projects__slider swiper">
+						<div class="projects__wrapper swiper-wrapper">
+							<div class="projects__slide swiper-slide">
+								<a href="https://fizkylt.com/" class="projects__link fizkylt" target="_blank" rel="noopener">
+									<p class="projects__link__descr">
+										Anna <br />
+										Gorpynchuk
+									</p>
+								</a>
+							</div>
+							<div class="projects__slide swiper-slide">
+								<a href="https://irrenphoto.com/" class="projects__link irrenphoto" target="_blank" rel="noopener">
+									<p class="projects__link__descr">
+										Irren <br />
+										Photo
+									</p>
+								</a>
+							</div>
+							<div class="projects__slide swiper-slide">
+								<a href="https://sale-olesya.netlify.app/" class="projects__link expert" target="_blank" rel="noopener">
+									<p class="projects__link__descr">Expert</p>
+								</a>
+							</div>
+							<div class="projects__slide swiper-slide">
+								<a href="https://olha-kutsybala.github.io/music-school-new/" class="projects__link music" target="_blank" rel="noopener">
+									<p class="projects__link__descr">
+										Music <br />
+										school
+									</p>
+								</a>
+							</div>
+							<div class="projects__slide swiper-slide">
+								<a href="https://sport-yoga.netlify.app/" class="projects__link yoga" target="_blank" rel="noopener">
+									<p class="projects__link__descr">
+										Sport <br />
+										Yoga
+									</p>
+								</a>
+							</div>
+							<div class="projects__slide swiper-slide">
+								<a href="https://inspire-design.netlify.app/" class="projects__link inspire" target="_blank" rel="noopener">
+									<p class="projects__link__descr">Inspire <br />Design</p>
+								</a>
+							</div>
+							<div class="projects__slide swiper-slide">
+								<a href="https://olha-kutsybala.github.io/goit-markup-hw-08/" class="projects__link webstudio" target="_blank" rel="noopener">
+									<p class="projects__link__descr">
+										Web <br />
+										Studio
+									</p>
+								</a>
+							</div>
+							<div class="projects__slide swiper-slide">
+								<a href="https://marinka03.github.io/project-bookshelf/" class="projects__link bookshelf" target="_blank" rel="noopener">
+									<p class="projects__link__descr">
 										Bookshelf
 										<span class="projects__descr">(team project)</span>
-									</a>
-								</li>
-								<li class="projects__item animate">
-									<a href="https://nata-curly.github.io/project-mimino_g11/" class="projects__link" target="_blank" rel="noopener">
+									</p>
+								</a>
+							</div>
+							<div class="projects__slide swiper-slide">
+								<a href="https://nata-curly.github.io/project-mimino_g11/" class="projects__link mimino" target="_blank" rel="noopener">
+									<p class="projects__link__descr">
 										Mimino
+										<br />
 										<span class="projects__descr">(team project)</span>
-									</a>
-								</li>
-
-								<li class="projects__item animate">
-									<a href="https://yevgeniy8.github.io/GooseTrack/" class="projects__link" target="_blank" rel="noopener">
+									</p>
+								</a>
+							</div>
+							<div class="projects__slide swiper-slide">
+								<a href="https://yevgeniy8.github.io/GooseTrack/" class="projects__link goose" target="_blank" rel="noopener">
+									<p class="projects__link__descr">
 										GooseTrack
 										<span class="projects__descr">(team project)</span>
-									</a>
-								</li>
-							</ul>
-							<button hidden data-showmore-button type="button" class="show__more button">
-								<span data-lang="lang-project-show">Show more</span>
-								<span data-lang="lang-project-hide">Hide</span>
-							</button>
+									</p>
+								</a>
+							</div>
 						</div>
+						<button type="button" class="swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next"></button>
+						<!-- Якщо потрібен скролбар -->
+						<div class="swiper-pagination"></div>
 					</div>
+
+					<!-- <h3 class="secondary__title" data-lang="lang-project-sub-title">
+                My project
+              </h3> -->
+					<!-- <div data-showmore="items" data-showmore-media="768,max"> -->
+					<!-- <div data-showmore="items"> -->
+					<!-- <ul data-showmore-content class="projects__list">
+                  <li class="projects__item animate">
+                    <a
+                      href="https://fizkylt.com/"
+                      class="projects__link fizkylt"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Anna Gorpynchuk
+                    </a>
+                  </li>
+                  <li class="projects__item animate">
+                    <a
+                      href="https://inspire-design.netlify.app/"
+                      class="projects__link"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Inspire Design
+                    </a>
+                  </li>
+                  <li class="projects__item animate">
+                    <a
+                      href="https://sale-olesya.netlify.app/"
+                      class="projects__link"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Site for an expert
+                    </a>
+                  </li>
+                  <li class="projects__item animate">
+                    <a
+                      href="https://olha-kutsybala.github.io/music-school-new/"
+                      class="projects__link"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Music school
+                    </a>
+                  </li>
+                  <li class="projects__item animate">
+                    <a
+                      href="https://olha-kutsybala.github.io/goit-markup-hw-08/"
+                      class="projects__link"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Web Studio
+                    </a>
+                  </li>
+                  <li class="projects__item animate">
+                    <a
+                      href="https://marinka03.github.io/project-bookshelf/"
+                      class="projects__link"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Bookshelf
+                      <span class="projects__descr">(team project)</span>
+                    </a>
+                  </li>
+                  <li class="projects__item animate">
+                    <a
+                      href="https://nata-curly.github.io/project-mimino_g11/"
+                      class="projects__link"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Mimino
+                      <span class="projects__descr">(team project)</span>
+                    </a>
+                  </li>
+
+                  <li class="projects__item animate">
+                    <a
+                      href="https://yevgeniy8.github.io/GooseTrack/"
+                      class="projects__link"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      GooseTrack
+                      <span class="projects__descr">(team project)</span>
+                    </a>
+                  </li>
+                </ul> -->
+					<!-- <button
+                  hidden
+                  data-showmore-button
+                  type="button"
+                  class="show__more button"
+                >
+                  <span data-lang="lang-project-show">Show more</span>
+                  <span data-lang="lang-project-hide">Hide</span>
+                </button> -->
+					<!-- </div> -->
+					<!-- </div> -->
 				</div>
 			</section>
 			<section class="skills" data-watch="navigator" data-watch-threshold="0.3" data-watch-once>
@@ -612,9 +745,9 @@
 		};
 	</script>
 
-	<script src="js/app.min.js?_v=20240307210636"></script>
-	<!-- <script src="dist/notiflix-aio-X.X.X.min.js?_v=20240307210636"></script>0 -->
-	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js?_v=20240307210636"></script>
+	<script src="js/app.min.js?_v=20240412162414"></script>
+	<!-- <script src="dist/notiflix-aio-X.X.X.min.js?_v=20240412162414"></script>0 -->
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js?_v=20240412162414"></script>
 	<script>
 		const typed = new Typed("#element", {
 			strings: ["Front-end developer"],
